@@ -1,7 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("test");
-        //declarar variable tipo perros
         Autos Auto1;
         Autos Auto2;
         Autos Auto3;
@@ -23,7 +21,26 @@ public class Main {
         Auto2.setCilindraje("3.8L");
         Auto3.setCilindraje("1.4L");
 
-        //Obtener valores de cada atributo
+        System.out.println("Auto 1");
+        System.out.println(Auto1.getMarca());
+        System.out.println(Auto1.getModelo());
+        System.out.println(Auto1.getColor());
+        System.out.println(Auto1.getAnio());
+        System.out.println(Auto1.getCilindraje());
+        System.out.println("Auto 2");
+        System.out.println(Auto2.getMarca());
+        System.out.println(Auto2.getModelo());
+        System.out.println(Auto2.getColor());
+        System.out.println(Auto2.getAnio());
+        System.out.println(Auto2.getCilindraje());
+        System.out.println("Auto 3");
+        System.out.println(Auto3.getMarca());
+        System.out.println(Auto3.getModelo());
+        System.out.println(Auto3.getColor());
+        System.out.println(Auto3.getAnio());
+        System.out.println(Auto3.getCilindraje());
+
+
 
     }
 }
