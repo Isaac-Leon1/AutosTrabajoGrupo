@@ -40,6 +40,9 @@ public class Main {
         System.out.println(Auto3.getAnio());
         System.out.println(Auto3.getCilindraje());
 
+        int Suma= Auto1.getAnio()+Auto2.getAnio()+Auto3.getAnio();
+
+        System.out.println("La suma de los años es: "+Suma);
 
 
     }
