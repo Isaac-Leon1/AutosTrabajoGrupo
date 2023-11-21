@@ -37,4 +37,8 @@ public class Autos {
     public void setCilindraje(String newCilindraje){
         this.cilindraje=newCilindraje;
     }
+    public void imprimirDatos(){
+        System.out.println("Año:"+getAnio()+", Modelo: "+getModelo()+", Marca: "+getMarca()+", Color: "+getColor()+", Cilindraje: "+getCilindraje());
+    }
+
 }

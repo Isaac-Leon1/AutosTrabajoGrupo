@@ -1,5 +1,7 @@
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         Autos Auto1;
         Autos Auto2;
         Autos Auto3;
@@ -22,28 +24,29 @@ public class Main {
         Auto3.setCilindraje("1.4L");
 
         System.out.println("Auto 1");
-        System.out.println(Auto1.getMarca());
-        System.out.println(Auto1.getModelo());
-        System.out.println(Auto1.getColor());
-        System.out.println(Auto1.getAnio());
-        System.out.println(Auto1.getCilindraje());
+        Auto1.imprimirDatos();
         System.out.println("Auto 2");
-        System.out.println(Auto2.getMarca());
-        System.out.println(Auto2.getModelo());
-        System.out.println(Auto2.getColor());
-        System.out.println(Auto2.getAnio());
-        System.out.println(Auto2.getCilindraje());
+        Auto2.imprimirDatos();
         System.out.println("Auto 3");
-        System.out.println(Auto3.getMarca());
-        System.out.println(Auto3.getModelo());
-        System.out.println(Auto3.getColor());
-        System.out.println(Auto3.getAnio());
-        System.out.println(Auto3.getCilindraje());
+        Auto2.imprimirDatos();
 
         int Suma= Auto1.getAnio()+Auto2.getAnio()+Auto3.getAnio();
 
         System.out.println("La suma de los años es: "+Suma);
+        System.out.println("Ingrese los datos del primer auto");
+        System.out.println("Año: ");
+        int anioTemp = scanner.nextInt();
+        Auto1.setAnio(anioTemp);
 
+        System.out.println("Modelo: ");
+        String modeloTemp = scanner.next();
+        Auto1.setModelo(modeloTemp);
+
+        System.out.println("Color: ");
+        String colorTemp = scanner.next();
+        Auto1.setColor(colorTemp);
+
+        Auto1.imprimirDatos();
 
     }
 }
